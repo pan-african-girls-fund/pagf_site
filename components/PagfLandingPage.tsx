@@ -23,7 +23,7 @@ export function PagfLandingPage() {
       <iframe
         className="pagf-shell__frame"
         title="The Pan-African Girls Fund"
-        src="/pagf_landing_page_v3.html"
+        src="/pagf_landing_page_v4_shareable.html"
         style={{ height: `${Math.max(height, 900)}px` }}
       />
     </main>

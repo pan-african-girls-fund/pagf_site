@@ -3,7 +3,11 @@ import fs from "node:fs";
 import path from "node:path";
 import "./globals.css";
 
-const htmlSourcePath = path.join(process.cwd(), "public", "pagf_landing_page_v3.html");
+const htmlSourcePath = path.join(
+  process.cwd(),
+  "public",
+  "pagf_landing_page_v4_shareable.html",
+);
 const htmlSource = fs.existsSync(htmlSourcePath)
   ? fs.readFileSync(htmlSourcePath, "utf8")
   : "";
@@ -11,10 +15,9 @@ const faviconHref =
   htmlSource.match(/<link\s+rel="icon"[^>]*href="([^"]+)"/i)?.[1] ?? undefined;
 
 export const metadata: Metadata = {
-  title:
-    "The Pan-African Girls Fund — Resourcing the Dreams and Imaginations of African Girls and Young Women",
+  title: "PAGF — The Pan African Girls Fund",
   description:
-    "The Pan-African Girls Fund is an umbrella/umbrella fund that resources girls' and young feminists' dreams, imaginations, and freedoms across Africa.",
+    "The Pan African Girls Fund is an Umbrella Fund that resources girls' and young feminists' dreams, imaginations, and freedoms.",
   openGraph: {
     title: "The Pan-African Girls Fund",
     description:
